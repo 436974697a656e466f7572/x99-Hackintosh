@@ -1,1 +1,31 @@
 Read this first.
+
+This guide is a work in progress and is updated when I get the time. 
+
+X99 is a troublesome platform when it comes to Hackintoshing.
+
+The hardware used for this build is as follows:
+Intel I7-5820k (Haswell-E)
+Gigabyte OC 5700XT 8Gb Graphics Card
+MSI X99A SLi Plus Motherboard
+32GB DDR4 2866mhz (Corsair Vengeance)
+Fenvi T919 Wireless/Bluetooth PCIE card (native support, no kexts needed)
+480GB Corsair SSD
+
+Lets start with the bios settings, the only things I have changed are:
+
+Settings > Advanced > PCI Subsystem Settings
+Enabled Above 4G Decoding (this takes the place of npci= boot flags).
+
+Settings > Advanced > Power Management Setup
+Windows 8/8.1 Configuration - Enabled
+Fast/Secure Boot - Disabled.
+
+Overclocking > CPU Features.
+Execute Disable Bit - Enabled.
+Intel C-State - Enabled.
+C1E Support - Enabled.
+EIST - Disabled.
+CFG Lock - Disabled.
+
+This combination of settings allowed Power Management to work correctly for me.
